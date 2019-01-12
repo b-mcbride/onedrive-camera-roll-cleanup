@@ -15,6 +15,7 @@ import { AlertsComponent } from './alerts/alerts.component';
 
 import { MsalModule } from '@azure/msal-angular';
 import { OAuthSettings } from '../oauth';
+import { CalendarComponent } from './calendar/calendar.component';
 
 library.add(faExternalLinkAlt);
 library.add(faUserCircle);
@@ -24,7 +25,8 @@ library.add(faUserCircle);
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    AlertsComponent
+    AlertsComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
