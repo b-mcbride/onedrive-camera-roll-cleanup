@@ -42,4 +42,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
-src/oauth.ts
+/src/oauth.ts
