@@ -50,10 +50,6 @@ export class AuthService {
         this.alertsService.add('Get token failed', JSON.stringify(reason, null, 2));
       });
 
-    // Temporary to display token in an error box
-    if (result) {
-      this.alertsService.add('Token acquired', result);
-    }
     return result;
   }
 

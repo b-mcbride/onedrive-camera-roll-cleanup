@@ -1,0 +1,15 @@
+<h1>Photos</h1>
+<table class="table">
+  <thead>
+      <th scope="col">Selected</th>
+    <th scope="col">Preview</th>
+    <th scope="col">Name</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let photo of photos">
+      <td><input type="checkbox" checked={{photo.selected}} /></td>
+      <td><img height="{{photo.thumbnails[0].small.height}}" width="{{photo.thumbnails[0].small.width}}" src="{{photo.thumbnails[0].small.url}}" /></td>
+      <td>{{photo.name}}</td>
+    </tr>
+  </tbody>
+</table>

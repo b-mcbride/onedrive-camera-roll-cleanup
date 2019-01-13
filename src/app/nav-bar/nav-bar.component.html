@@ -11,6 +11,9 @@
           <a routerLink="/" class="nav-link" routerLinkActive="active">Home</a>
         </li>
         <li *ngIf="authService.authenticated" class="nav-item">
+          <a routerLink="/photos" class="nav-link" routerLinkActive="active">Photos</a>
+        </li>
+        <li *ngIf="authService.authenticated" class="nav-item">
           <a routerLink="/calendar" class="nav-link" routerLinkActive="active">Calendar</a>
         </li>
       </ul>
